@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  <script src="./libs/babel.min.js"></script>
+</head>
+
+<body>
+  <div id="app"></div>
+
+  <script type="text/babel">
+    // const h1 = React.createElement('h1', { title: '第一次', style: { color: 'black', border: '1px solid skyblue', background: 'aqua' } }, 'React');
+
+    // const img = React.createElement('img',{src:'',title:'zz'},null);
+
+    // const div = React.createElement('div',{width:'100px',height:'100px',background:'aqua'},h1,img);
+
+    // const div = <div className="aa">
+    //   <h1>剑来</h1>
+    // </div>
+
+    // const msg = 'i hate u'
+    // function fn(str) {
+    //   return str.split('').reverse().join('');
+    // }
+
+    // const div = <div>
+    //   <p>{msg}</p>
+    //   <p>{fn(msg)}</p>
+    //   <p>{msg.toUpperCase()}</p>
+    //   </div>  
+
+    // let str = '';
+    // const div = <div>
+    //   <input type="text" value={str} />
+    //   <p>{str}</p>
+    // </div>
+    // let brand = [
+    //         {
+    //             id:1,
+    //             name:'宝马 X6',
+    //             price:500000
+    //         },
+    //         {
+    //             id:2,
+    //             name:'奥迪 A8',
+    //             price:800000
+    //         },
+    //         {
+    //             id:3,
+    //             name:'奔驰',
+    //             price:1000000
+    //         }
+    //     ]
+
+    //     const div = <div>
+    //       {brand.map((item,index)=>(
+    //         <p key={item.id}>{item.name}-----{item.price}￥</p>
+    //       ))}
+    //       </div>
+    // const con = <div>
+    //   <h1>一级标题</h1>
+    //   <img src="./img/shafa.jpg" alt="沙发" />
+    // </div>;
+    // const div = <div>
+    //   {con}
+    // </div>
+
+    // function Header(params){
+    //   return <div><h1>你好</h1></div>
+    // }
+
+    // const div = <div><Header></Header></div>
+
+    class PageTitle extends React.Component{
+      render(){
+        return <div><h1>你好啊</h1></div>
+      }
+    }
+
+    const div = <div><PageTitle /></div>
+
+    ReactDOM.render(div, document.querySelector('#app'))
+    // ReactDOM.render(div,document.qquertSelector('#app'))
+  </script>
+
+</body>
+
+</html>
